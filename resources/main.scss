@@ -1,3 +1,4 @@
+@import "helper.scss";
 @import "navbar.scss";
 
 body {
@@ -107,6 +108,20 @@ a.active {
 
 .page.page-current {
 	display: block;
+}
+
+.technologies-icons > i {
+	font-size: 42px;
+}
+
+.contact {
+	padding-left: 0;
+}
+
+
+.contact > li {
+	list-style-type: none;
+	display: inline-block;
 }
 
 @media(max-width: 991px) {
