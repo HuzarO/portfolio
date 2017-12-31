@@ -2,6 +2,23 @@ $('.pages a').on('click', function (e) {
 	return Page.set($(this).data('id'), e);
 });
 
+$('.contact > li > a').on('click', function (e) {
+	e.preventDefault();
+
+	$('div.tab').each(function () {
+		$(this).removeClass('tab-active');
+	});
+
+	$('.contact > li > a').each(function () {
+		$(this).removeClass('active');
+	});
+
+	$('.contact > li > a[data-id="' + $(this).data('id') + '"]').addClass('active');
+	$('div.tab[data-id="' + $(this).data('id') + '"]').addClass('tab-active');
+
+	return false;
+});
+
 $('.openIcons').on('click', function (e) {
 	e.preventDefault();
 
