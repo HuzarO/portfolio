@@ -42,11 +42,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content-wrapper {
-	position: relative;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	position: absolute;
+	top: 0;
 	z-index: 1000;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 100%;
 }
 
 .content-wrapper:not(.finished) {
@@ -100,4 +107,10 @@ a.active {
 
 .page.page-current {
 	display: block;
+}
+
+@media(max-width: 991px) {
+	.content-wrapper.open {
+		top: -100%;
+	}
 }
