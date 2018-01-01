@@ -2684,10 +2684,11 @@ a.active {
   opacity: 1;
   top: 0; }
 
-@media (max-width: 767px) {
-  .content-wrapper .page.page-current {
-    max-height: 100%;
-    overflow-y: auto; } }
+.content-wrapper .page.page-current {
+  max-height: 100%;
+  overflow-x: hidden;
+  width: 100%; }
+
 @media (max-width: 991px) {
   .content-wrapper.open {
     top: -100%; }

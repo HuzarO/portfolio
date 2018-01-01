@@ -153,12 +153,15 @@ a.active {
 	top: 0;
 }
 
-@media(max-width: 767px) {
-	.content-wrapper .page.page-current {
-		max-height: 100%;
-		overflow-y: auto;
-	}
+//@media(max-width: 767px) {
+.content-wrapper .page.page-current {
+	max-height: 100%;
+	//overflow-y: auto;
+	overflow-x: hidden;
+	width: 100%;
 }
+
+//}
 
 @media(max-width: 991px) {
 	.content-wrapper.open {

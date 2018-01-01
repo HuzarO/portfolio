@@ -32,6 +32,12 @@ $('.navbar-toggle').on('click', function (e) {
 });
 
 $(function () {
+	//new SimpleBar($('.page')[0]);
+	new PerfectScrollbar($('.page')[0], {
+		wheelSpeed: 1,
+		swipeEasing: true
+	});
+
 	$(window).resize(function () {
 		var wWidth = $(window).width();
 		var wHeight = $(window).height();
