@@ -2430,7 +2430,7 @@
   transition: all .5s ease;
   position: absolute;
   z-index: 1100;
-  bottom: 0px;
+  top: calc(100% - 62px);
   margin-bottom: 0;
   width: 100%;
   height: 62px; }
@@ -2505,7 +2505,8 @@
 
 @media (max-width: 991px) {
   .navbar.open {
-    height: 100%; }
+    height: 100%;
+    top: 0; }
 
   .navbar:not(.open) > #navbar {
     display: none; }
@@ -2555,14 +2556,22 @@
     padding-left: 0;
     margin: 0 auto;
     text-align: center; } }
+html {
+  overflow: hidden;
+  width: 100%;
+  height: 100%; }
+
 body {
   background: #000000;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
   height: 100%;
+  position: fixed;
   overflow: hidden;
+  -webkit-overflow-scrolling: touch;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: rgba(255, 255, 255, 0.5); }
+  color: rgba(255, 255, 255, 0.5);
+  width: 100%; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;

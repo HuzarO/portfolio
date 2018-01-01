@@ -43,7 +43,7 @@ $(function () {
 
 		$('.rslides img').css({
 			width: (wWidth * ratio) + 'px',
-			height: wHeight + 'px'
+			height: wHeight + 62 + 'px'
 		});
 
 		$('.content-wrapper').css({
