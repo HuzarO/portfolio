@@ -32,12 +32,6 @@ $('.navbar-toggle').on('click', function (e) {
 });
 
 $(function () {
-	//new SimpleBar($('.page')[0]);
-	new PerfectScrollbar($('.page')[0], {
-		wheelSpeed: 1,
-		swipeEasing: true
-	});
-
 	$(window).resize(function () {
 		var wWidth = $(window).width();
 		var wHeight = $(window).height();
@@ -175,6 +169,17 @@ Page.set = function (id, event) {
 			$(this).addClass('active');
 		}
 	});
+
+	$('.page.page-current').mCustomScrollbar({
+		axis: 'y',
+		setTop: 0,
+		mouseWheel: {
+			scrollAmount: 200
+		},
+		alwaysShowScrollbar: 0
+	});
+
+	$($('.page.page-current').css('height', parseInt($('.page.page-current').css('height')) + 1 + 'px')); // To Prevent adding ScrollBar on float values
 
 	$('.content-wrapper, .navbar').removeClass('open');
 
