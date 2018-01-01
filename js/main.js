@@ -32,7 +32,11 @@ $('.navbar-toggle').on('click', function (e) {
 });
 
 $(function () {
-	$(window).resize(function () {
+	baron('.content-wrapper', {
+		position: 'absolute'
+	});
+
+	$(window).on('load resize scroll', function () {
 		var wWidth = $(window).width();
 		var wHeight = $(window).height();
 		var ratio = 1080 / wHeight;
@@ -67,6 +71,12 @@ $(function () {
 	], function () {
 		var wWidth = $(window).width();
 		var wHeight = $(window).height();
+		var ratio = 1080 / wHeight;
+
+		$('.rslides img').css({
+			width: (wWidth * ratio) + 'px',
+			height: wHeight + 'px'
+		});
 
 		$('.content-wrapper').css({
 			width: wWidth + 'px',
@@ -170,16 +180,7 @@ Page.set = function (id, event) {
 		}
 	});
 
-	$('.page.page-current').mCustomScrollbar({
-		axis: 'y',
-		setTop: 0,
-		mouseWheel: {
-			scrollAmount: 200
-		},
-		alwaysShowScrollbar: 0
-	});
-
-	$($('.page.page-current').css('height', parseInt($('.page.page-current').css('height')) + 1 + 'px')); // To Prevent adding ScrollBar on float values
+	//$('.content-wrapper').mCustomScrollbar('update');
 
 	$('.content-wrapper, .navbar').removeClass('open');
 

@@ -2599,16 +2599,16 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1000; }
+  z-index: 1000;
+  overflow-x: hidden !important; }
 
 .content-wrapper:not(.finished) {
   opacity: 0; }
 
 .content-wrapper > .content {
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  width: 100%;
+  display: table !important; }
 
 .rslides:after {
   content: '';
@@ -2642,14 +2642,13 @@ a.active {
   text-decoration: none; }
 
 .page {
-  text-align: center; }
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle; }
 
 .page:not(.page-current) {
   opacity: 0;
   display: none; }
-
-.page.page-current {
-  display: block; }
 
 .technologies-icons > i {
   font-size: 42px; }
@@ -2696,5 +2695,8 @@ a.active {
   .tab > a {
     font-size: 10px;
     letter-spacing: 1px; } }
+::-webkit-scrollbar {
+  /* for Mac OS X support */
+  width: 0; }
 
 /*# sourceMappingURL=main.css.map */
