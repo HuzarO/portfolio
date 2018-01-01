@@ -44,7 +44,7 @@ $(function () {
 
 		$('.content-wrapper').css({
 			width: wWidth + 'px',
-			height: wHeight + 'px'
+			height: (wHeight - 62) + 'px'
 		});
 	});
 
@@ -70,7 +70,7 @@ $(function () {
 
 		$('.content-wrapper').css({
 			width: wWidth + 'px',
-			height: wHeight + 'px'
+			height: (wHeight - 62) + 'px'
 		});
 
 		$('.loading-wrapper').animateCss('fadeOut', function () {
