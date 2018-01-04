@@ -2697,6 +2697,61 @@ a.active {
   overflow-x: hidden;
   width: 100%; }
 
+::-webkit-scrollbar {
+  /* for Mac OS X support */
+  width: 0; }
+
+/**
+ * Portfolio
+ */
+div.project-base {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 15px; }
+
+div.project-base {
+  width: 250px;
+  height: 140px;
+  cursor: pointer;
+  position: relative; }
+
+div.project-base > img {
+  width: 220px;
+  height: 110px;
+  cursor: pointer;
+  position: relative; }
+
+div.project-base > div,
+div.project-base > button {
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease; }
+
+div.project-base > div {
+  width: 220px;
+  height: 110px;
+  display: block;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  opacity: 0; }
+
+div.project-base > button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0; }
+
+div.project-base:hover > div, div.project-base:hover > button, div.project-base:focus > div, div.project-base:focus > button {
+  opacity: 1; }
+
+/**
+ * Media Queries
+ */
 @media (max-width: 991px) {
   .content-wrapper.open {
     top: -100%; }
@@ -2704,8 +2759,5 @@ a.active {
   .tab > a {
     font-size: 10px;
     letter-spacing: 1px; } }
-::-webkit-scrollbar {
-  /* for Mac OS X support */
-  width: 0; }
 
 /*# sourceMappingURL=main.css.map */

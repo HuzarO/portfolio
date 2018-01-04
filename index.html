@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="css/baron.css"/>
 	<link rel="stylesheet" href="css/bootstrap.css"/>
 	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="stylesheet" href="css/gallery.css"/>
 
 	<link rel="stylesheet"
 		  href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -65,11 +66,11 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 col-md-push-3 col-sm-10 col-sm-push-1">
-							<p class="m-b-15">Witaj na Mojej Stronie! Mam na imię Bartłomiej i jestem programistą.
-								Posiadam
-								doświadczenie w
-								tworzeniu stron, sklepów i aplikacji internetowych. Moje projekty bazują na różnych
-								technologiach:</p>
+							<p>Nazywam się Bartłomiej Fryz, mam 21 lat, zajmuje się programowaniem od
+								2008 roku. Jestem aktywnym freelancerem, zdołałem zamknąć kilka projektów
+								z których łączna pula zarobków to: 30 tys złotych.</p>
+							<p>Zajmuję się tworzeniem stron, sklepów i aplikacji internetowych. Moje projekty
+								bazują na różnych technologiach:</p>
 							<span class="technologies-icons">
 								<i class="devicon-html5-plain-wordmark colored"></i>
 								<i class="devicon-css3-plain-wordmark colored"></i>
@@ -84,17 +85,14 @@
 								<i class="devicon-javascript-plain colored"></i>
 								<i class="devicon-photoshop-plain colored"></i>
 							</span>
-							<p class="m-t-15">Swoją przygodę z tworzeniem stron internetowych zacząłem w 2008 roku.
-								Była
-								to
-								strona
-								stworzona w Microsoft Publisher, jako iż jestem z natury dociekliwy po skończonej
-								pracy
-								zajrzałem w źródło. Gdy moim oczom ukazał się kod wygenerowany przez ów program
-								powiedziałem
-								Sobie iż nigdy więcej nie użyję tego typu programów i zacząłem naukę HTML i
-								CSS, a
-								także PHP i MySQL.</p>
+							<p class="m-t-15">Posiadam bardzo dobre doświadczenie oraz wiedzę na temat front-end /
+								back-endu.
+								Pracowałem w prywatnych projektach do gry Lineage 2 jako programista / administrator dla
+								serwerów takich jak:
+								<b>Exodus</b>, <b>Eternity Throne</b>
+							</p>
+							<p>Byłem także członkiem zespołu korporacji MOE, gdzie tworzyliśmy sieć Intranet. Byłem tam
+								programistą .NET frameworku dotNetNuke.</p>
 						</div>
 					</div>
 				</div>
@@ -103,8 +101,17 @@
 				<header><h1>Portfolio</h1></header>
 				<div class="container">
 					<div class="row">
-						<div class="col-md-6 col-md-push-3 col-sm-10 col-sm-push-1">
-							<p class="m-b-15">W trakcie budowy...</p>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div data-id="0" class="project-base">
+								<img src="img/project1.jpg" alt="Project 1"/>
+								<div></div>
+								<button class="btn btn-default">Details</button>
+							</div>
+							<div data-id="1" class="project-base">
+								<img src="img/project2.jpg" alt="Project 2"/>
+								<div></div>
+								<button class="btn btn-default">Details</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -167,11 +174,56 @@
 	</div>
 </nav>
 
+<div id="gallery_container">
+	<div class="container-fluid">
+		<div class="project row" data-id="0">
+			<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+				<div>
+					<ul class="gallery_rslides">
+						<li><img src="img/project1.jpg" alt=""></li>
+						<li><img src="img/project2.jpg" alt=""></li>
+						<li><img src="img/project3.jpg" alt=""></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+				<div>
+					<h1>Project 1</h1>
+					<p>Sunt fluctuses convertam barbatus, nobilis sagaes. Gratis contencios ducunt ad silva. Bursas studere, tanquam bi-color elevatus. Particulas assimilant in quadrata! Vae, raptus historia! Vae, fluctui!</p>
+					<p>Ecce, dexter resistentia! Pius verpa recte captiss bursa est. Cum homo cantare, omnes toruses imperium dexter, gratis menses. Tabes salvus abactor est.</p>
+					<button class="btn btn-default hide_gallery">Gotcha!</button>
+				</div>
+			</div>
+		</div>
+		<div class="project row" data-id="1">
+			<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+				<div>
+					<ul class="gallery_rslides">
+						<li><img src="img/project1.jpg" alt=""></li>
+						<li><img src="img/project2.jpg" alt=""></li>
+						<li><img src="img/project3.jpg" alt=""></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+				<div>
+					<h1>Project 2</h1>
+					<p>Sunt fluctuses convertam barbatus, nobilis sagaes. Gratis contencios ducunt ad silva. Bursas studere, tanquam bi-color elevatus. Particulas assimilant in quadrata! Vae, raptus historia! Vae, fluctui!</p>
+					<p>Ecce, dexter resistentia! Pius verpa recte captiss bursa est. Cum homo cantare, omnes toruses imperium dexter, gratis menses. Tabes salvus abactor est.</p>
+					<button class="btn btn-default hide_gallery">Gotcha!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <script src="js/jquery/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.mousewheel.min.js"></script>
 <script src="js/baron.min.js"></script>
 <script src="js/responsiveslides/responsiveslides.min.js"></script>
 
 <script src="js/main.js"></script>
+<script src="js/gallery.js"></script>
 </body>
 </html>

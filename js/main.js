@@ -32,7 +32,7 @@ $('.navbar-toggle').on('click', function (e) {
 });
 
 $(function () {
-	baron('.content-wrapper', {
+	baron('.content-wrapper, .project', {
 		position: 'absolute'
 	});
 
@@ -67,7 +67,10 @@ $(function () {
 	Loader([
 		'img/slide1.jpg',
 		'img/slide2.jpg',
-		'img/slide3.jpg'
+		'img/slide3.jpg',
+		'img/project1.jpg',
+		'img/project2.jpg',
+		'img/project3.jpg'
 	], function () {
 		var wWidth = $(window).width();
 		var wHeight = $(window).height();
@@ -85,7 +88,7 @@ $(function () {
 
 		$('.loading-wrapper').animateCss('fadeOut', function () {
 			$('.navbar').animateCss('fadeIn', function () {
-				$(".rslides").responsiveSlides({
+				$(".rslides, .gallery_rslides").responsiveSlides({
 					auto: true,
 					speed: 1000,
 					pager: false,
