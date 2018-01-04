@@ -17,6 +17,7 @@
 	border: 1px solid transparent;
 	white-space: nowrap;
 	text-transform: uppercase;
+	letter-spacing: normal !important;
 
 	-webkit-transition: color .5s ease, border .5s ease;
 	-moz-transition: color .5s ease, border .5s ease;
@@ -88,6 +89,17 @@ a.btn {
 
 .btn-primary {
 	@include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+	border-radius: 0;
+	border-width: 2px;
+	font-weight: bold;
+
+	&:hover,
+	&:focus,
+	&.focus {
+		border-color: rgba(255, 255, 255, 0.5);
+		color: rgba(255, 255, 255, 0.5);
+
+	}
 }
 
 // Success appears as green

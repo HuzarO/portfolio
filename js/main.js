@@ -2,6 +2,13 @@ $('.pages a').on('click', function (e) {
 	return Page.set($(this).data('id'), e);
 });
 
+$('button.preview').on('click', function (e) {
+	window.open(
+		$(this).data('url'),
+		'_blank'
+	);
+});
+
 $('.contact > li > a').on('click', function (e) {
 	e.preventDefault();
 
@@ -70,7 +77,13 @@ $(function () {
 		'img/slide3.jpg',
 		'img/project1.jpg',
 		'img/project2.jpg',
-		'img/project3.jpg'
+		'img/project3.jpg',
+		'img/project4_0.jpg',
+		'img/project4_1.jpg',
+		'img/project5_0.jpg',
+		'img/project5_1.jpg',
+		'img/project5_2.jpg',
+		'img/project5_3.jpg',
 	], function () {
 		var wWidth = $(window).width();
 		var wHeight = $(window).height();

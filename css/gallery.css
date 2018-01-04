@@ -56,8 +56,14 @@
 #gallery_container .gallery_rslides {
   position: initial; }
 
+#gallery_container .gallery_rslides:after {
+  background: none; }
+
 #gallery_container .gallery_rslides > li {
   top: initial; }
+
+#gallery_container .project button {
+  margin: 15px; }
 
 @media (max-width: 991px) {
   #gallery_container {
