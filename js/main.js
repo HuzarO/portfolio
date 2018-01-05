@@ -75,15 +75,14 @@ $(function () {
 		'img/slide1.jpg',
 		'img/slide2.jpg',
 		'img/slide3.jpg',
-		'img/project1.jpg',
-		'img/project2.jpg',
-		'img/project3.jpg',
-		'img/project4_0.jpg',
-		'img/project4_1.jpg',
-		'img/project5_0.jpg',
-		'img/project5_1.jpg',
-		'img/project5_2.jpg',
-		'img/project5_3.jpg',
+		'img/project1_0.jpg',
+		'img/project1_1.jpg',
+		'img/project1_2.jpg',
+		'img/project2_0.jpg',
+		'img/project2_1.jpg',
+		'img/project2_2.jpg',
+		'img/project2_3.jpg',
+		'img/project3_0.jpg',
 	], function () {
 		var wWidth = $(window).width();
 		var wHeight = $(window).height();
