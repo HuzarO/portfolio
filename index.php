@@ -1,3 +1,13 @@
+<?php
+$description = 'Bartłomiej Fryz - Profesjonalne Tworzenie Stron, Sklepów i Aplikacji Internetowych. Ropczyce, Dębica, Rzeszów, Podkarpackie.';
+$title = 'Bartłomiej Fryz - Profesjonalne Tworzenie Stron, Sklepów i Aplikacji Internetowych.';
+
+if (isset($_GET['lang']) && $_GET['lang'] === 'en') {
+    $description = 'Bartłomiej Fryz - Professional Creating of Websites, Webshops and Web Applications. Ropczyce, Dębica, Rzeszów, Podkarpackie.';
+	$title = 'Bartłomiej Fryz - Professional Creating of Websites, Webshops and Web Applications.';
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -6,12 +16,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<meta name="description"
-		  content="Bartłomiej Fryz - Profesjonalne Tworzenie Stron, Sklepów i Aplikacji Internetowych. Ropczyce, Dębica, Rzeszów, Podkarpackie.">
+		  content="<?= $description; ?>">
 	<meta name="author" content="Bartłomiej Fryz">
-	<title>Bartłomiej Fryz - Profesjonalne Tworzenie Stron, Sklepów i Aplikacji Internetowych.</title>
+	<title><?= $title; ?></title>
 
 	<link href='//fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-	<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300'
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300'
 		  rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="css/animate.css/animate.min.css"/>
@@ -61,14 +71,12 @@
 </ul>
 
 <?php
-
 if (isset($_GET['lang']) && $_GET['lang'] === 'en') {
     echo file_get_contents('english.html');
 } else {
     echo file_get_contents('polish.html');
 }
 ?>
-
 
 <script src="js/jquery/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
