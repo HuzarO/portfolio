@@ -1,15 +1,17 @@
 <?php
 $description = 'Bartłomiej Fryz - Profesjonalne Tworzenie Stron, Sklepów i Aplikacji Internetowych. Ropczyce, Dębica, Rzeszów, Podkarpackie.';
 $title = 'Bartłomiej Fryz - Profesjonalne Tworzenie Stron, Sklepów i Aplikacji Internetowych.';
+$lang = 'pl';
 
 if (isset($_GET['lang']) && $_GET['lang'] === 'en') {
+	$lang = 'en';
     $description = 'Bartłomiej Fryz - Professional Creating of Websites, Webshops and Web Applications. Ropczyce, Dębica, Rzeszów, Podkarpackie.';
 	$title = 'Bartłomiej Fryz - Professional Creating of Websites, Webshops and Web Applications.';
 }
 ?>
 
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="<?= $lang; ?>">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -71,7 +73,7 @@ if (isset($_GET['lang']) && $_GET['lang'] === 'en') {
 </ul>
 
 <?php
-if (isset($_GET['lang']) && $_GET['lang'] === 'en') {
+if ($lang === 'en') {
     echo file_get_contents('english.html');
 } else {
     echo file_get_contents('polish.html');
