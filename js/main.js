@@ -46,12 +46,22 @@ $(function () {
 	$(window).on('load resize scroll', function () {
 		var wWidth = $(window).width();
 		var wHeight = $(window).height();
-		var ratio = 1080 / wHeight;
+		var ratio = (wHeight * 16 / 9);
+		var left = (ratio - wWidth) / 2;
 
-		$('.rslides img').css({
-			width: (wWidth * ratio) + 'px',
-			height: wHeight + 62 + 'px'
-		});
+		var props = {
+			minWidth: ratio + 'px',
+			height: wHeight + 'px',
+			left: -left + 'px'
+		};
+
+		console.log(ratio, wWidth);
+		if (ratio < wWidth) {
+			props.minWidth = wWidth + 'px';
+			props.left = 0;
+		}
+
+		$('.rslides img, .rslides div').css(props);
 
 		$('.content-wrapper').css({
 			width: wWidth + 'px',
@@ -75,6 +85,7 @@ $(function () {
 		'img/slide1.jpg',
 		'img/slide2.jpg',
 		'img/slide3.jpg',
+		'img/slide4.jpg',
 		'img/project1_0.jpg',
 		'img/project1_1.jpg',
 		'img/project1_2.jpg',
@@ -83,15 +94,37 @@ $(function () {
 		'img/project2_2.jpg',
 		'img/project2_3.jpg',
 		'img/project3_0.jpg',
+		'img/project3_1.jpg',
+		'img/project3_2.jpg',
+		'img/project4_0.jpg',
+		'img/project4_1.jpg',
+		'img/project4_2.jpg',
+		'img/project5_0.jpg',
+		'img/project5_1.jpg',
+		'img/project5_2.jpg',
+		'img/project5_3.jpg',
+		'img/project6_0.jpg',
+		'img/project6_1.jpg',
+		'img/project6_2.jpg',
+		'img/project6_3.jpg'
 	], function () {
 		var wWidth = $(window).width();
 		var wHeight = $(window).height();
-		var ratio = 1080 / wHeight;
+		var ratio = (wHeight * 16 / 9);
+		var left = (ratio - wWidth) / 2;
 
-		$('.rslides img').css({
-			width: (wWidth * ratio) + 'px',
-			height: wHeight + 'px'
-		});
+		var props = {
+			minWidth: ratio + 'px',
+			height: wHeight + 'px',
+			left: -left + 'px'
+		};
+
+		if (ratio < wWidth) {
+			props.minWidth = wWidth + 'px';
+			props.left = 0;
+		}
+
+		$('.rslides img, .rslides div').css(props);
 
 		$('.content-wrapper').css({
 			width: wWidth + 'px',

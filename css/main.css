@@ -2442,7 +2442,7 @@
   opacity: 0; }
 
 #navbar > .pages {
-  width: 570px;
+  width: 470px;
   margin: 0 auto;
   display: inline-block;
   opacity: 1;
@@ -2497,11 +2497,16 @@
   overflow: hidden;
   height: 62px; }
 
-#navbar > .social > a {
+#navbar > .social > a.openIcons {
   display: inline-block;
   vertical-align: middle;
   float: right;
   line-height: 72px; }
+
+#navbar > .social > a:not(.openIcons) {
+  display: inline-block;
+  vertical-align: top;
+  padding: 21px 10px 21px 10px; }
 
 @media (max-width: 991px) {
   .navbar.open {
@@ -2547,7 +2552,11 @@
     width: 100%; }
 
   #navbar > .social > div {
-    width: 100%; }
+    width: 40%;
+    margin-right: 0; }
+
+  #navbar > .social > a.language {
+    width: 40%; }
 
   #navbar > .social > div > ul {
     opacity: 1 !important;
@@ -2628,6 +2637,9 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   z-index: 100; }
+
+.rslides img {
+  position: relative; }
 
 a,
 a:visited {

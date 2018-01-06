@@ -85,6 +85,10 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 100;
 }
 
+.rslides img {
+	position: relative;
+}
+
 a,
 a:visited {
 	color: rgba(255, 255, 255, 0.5);
@@ -215,7 +219,6 @@ div.project-base > div {
 	left: 15px;
 	opacity: 0;
 }
-
 
 div.project-base > button {
 	position: absolute;
