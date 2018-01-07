@@ -3,13 +3,15 @@ $description = 'Bartłomiej Fryz - Profesjonalne Tworzenie Stron, Sklepów i Apl
 $title = 'Bartłomiej Fryz - Profesjonalne Tworzenie Stron, Sklepów i Aplikacji Internetowych.';
 $lang = 'pl';
 
+$keywords = 'Projektowanie stron internetowych, tworzenie stron internetowych, projektowanie stron www, tworzenie stron www, strony internetowe rzeszów, strony www rzeszów, agencja interaktywna rzeszów, projektowanie stron internetowych rzeszów, tworzenie stron internetowych rzeszów, projektowanie stron www rzeszów, tworzenie stron www rzeszów, reklama rzeszów, rzeszów, w rzeszów, rzeszów, rzeszow, ropczyce, w ropczycach, w ropczyce, podkarpackie';
+
 if (isset($_GET['lang']) && $_GET['lang'] === 'en') {
 	$lang = 'en';
     $description = 'Bartłomiej Fryz - Professional Creating of Websites, Webshops and Web Applications. Ropczyce, Dębica, Rzeszów, Podkarpackie.';
 	$title = 'Bartłomiej Fryz - Professional Creating of Websites, Webshops and Web Applications.';
+	$keywords = 'Website creating, design websites, design www, create www, make www, own website, create own website, ropczyce, rzeszow, poland, podkarpackie';
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="<?= $lang; ?>">
 <head>
@@ -19,7 +21,12 @@ if (isset($_GET['lang']) && $_GET['lang'] === 'en') {
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<meta name="description"
 		  content="<?= $description; ?>">
-	<meta name="author" content="Bartłomiej Fryz">
+	<meta name="keywords" content="<?= $keywords; ?>"/>
+	<meta name="Subjects" content="<?= $keywords; ?>"/>
+	<meta name="Abstract" content="<?= $keywords; ?>"/>
+	<meta name="keyphrease" content="<?= $keywords; ?>"/>
+	<meta name="Clasification" content="<?= $keywords; ?>"/>
+	<meta name="Author" content="<?= $title; ?>">
 	<title><?= $title; ?></title>
 
 	<link href='//fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
@@ -57,12 +64,8 @@ if (isset($_GET['lang']) && $_GET['lang'] === 'en') {
 	</noscript>
 </head>
 <body>
-<div class="loading-wrapper animated">
-	<div>
-		<object data="img/loading.svg" type="image/svg+xml" width="250px" height="250px">
-			Loading
-		</object>
-	</div>
+<div id="loader-wrapper" class="animated">
+	<div id="loader"></div>
 </div>
 
 <ul class="rslides">

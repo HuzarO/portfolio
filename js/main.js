@@ -131,7 +131,7 @@ $(function () {
 			height: (wHeight - 62) + 'px'
 		});
 
-		$('.loading-wrapper').animateCss('fadeOut', function () {
+		$('#loader-wrapper').animateCss('fadeOut', function () {
 			$('.navbar').animateCss('fadeIn', function () {
 				$(".rslides, .gallery_rslides").responsiveSlides({
 					auto: true,
