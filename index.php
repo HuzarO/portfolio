@@ -1,14 +1,14 @@
 <?php
-$description = 'Bartłomiej Fryz - Profesjonalne Tworzenie Stron, Sklepów i Aplikacji Internetowych. Ropczyce, Dębica, Rzeszów, Podkarpackie.';
-$title = 'Bartłomiej Fryz - Profesjonalne Tworzenie Stron, Sklepów i Aplikacji Internetowych.';
+$description = 'Bartłomiej Fryz - Profesjonalne Tworzenie Stron, Sklepów i Aplikacji Mobilnych. Ropczyce, Dębica, Rzeszów, Podkarpackie.';
+$title = 'Bartłomiej Fryz - Profesjonalne Tworzenie Stron, Sklepów i Aplikacji Mobilnych.';
 $lang = 'pl';
 
 $keywords = 'Projektowanie stron internetowych, tworzenie stron internetowych, projektowanie stron www, tworzenie stron www, strony internetowe rzeszów, strony www rzeszów, agencja interaktywna rzeszów, projektowanie stron internetowych rzeszów, tworzenie stron internetowych rzeszów, projektowanie stron www rzeszów, tworzenie stron www rzeszów, reklama rzeszów, rzeszów, w rzeszów, rzeszów, rzeszow, ropczyce, w ropczycach, w ropczyce, podkarpackie';
 
 if (isset($_GET['lang']) && $_GET['lang'] === 'en') {
 	$lang = 'en';
-    $description = 'Bartłomiej Fryz - Professional Creating of Websites, Webshops and Web Applications. Ropczyce, Dębica, Rzeszów, Podkarpackie.';
-	$title = 'Bartłomiej Fryz - Professional Creating of Websites, Webshops and Web Applications.';
+    $description = 'Bartłomiej Fryz - Professional Creating of Websites, Webshops and Mobile Applications. Ropczyce, Dębica, Rzeszów, Podkarpackie.';
+	$title = 'Bartłomiej Fryz - Professional Creating of Websites, Webshops and Mobile Applications.';
 	$keywords = 'Website creating, design websites, design www, create www, make www, own website, create own website, ropczyce, rzeszow, poland, podkarpackie';
 }
 ?>
